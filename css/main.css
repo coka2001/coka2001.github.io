@@ -1,0 +1,94 @@
+
+p,h1,h2,h3,h4,h5,h6,span,strong {
+    font-family: 'Nanumsquare';
+}
+
+/*jumbotron 배경넣기*/
+.background-img {
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), 
+        url(/img/kid.jpg);
+}
+
+
+
+.small-heading {
+    font-size: 3rem;
+}
+
+
+/*메뉴 우측 정렬*/
+
+.flex-right-align {
+    justify-content: flex-end;
+}
+
+
+
+
+/*메뉴 배경 투명*/
+@media screen and (min-width:992px) {
+    
+    .navbar {
+        position: relative;
+        width: 100%;
+    }
+    
+    .transparent {
+        background-color:rgba(0, 0, 0, 0)!important;
+        position: absolute;
+    }
+}
+
+
+/*숙련된자의 물고기 정렬*/
+
+.fish-img img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.fish-img h4 {
+    text-align: center;
+}
+
+.fish-img p {
+    text-align: center;
+}
+
+
+
+
+
+.black-background {
+    margin-top: 90px;
+    background-color:#363636;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.yellow-box {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.yellow-box:hover{
+    opacity: 0.5;
+}
+
+.position {
+    position: relative;
+}
